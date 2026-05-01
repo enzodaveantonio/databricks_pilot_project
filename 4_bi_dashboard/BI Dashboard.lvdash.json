@@ -1,0 +1,1614 @@
+{
+  "datasets": [
+    {
+      "name": "f84c1ff2",
+      "displayName": "fact_transactions_denorm",
+      "config": {
+        "version": "1.1",
+        "source": "ecommerce.gold.fact_transactions_denorm",
+        "dimensions": [
+          {
+            "name": "order_date",
+            "expr": "source.order_date",
+            "displayName": "Order Date"
+          },
+          {
+            "name": "order_timestamp",
+            "expr": "source.order_timestamp",
+            "displayName": "Order Timestamp"
+          },
+          {
+            "name": "order_id",
+            "expr": "source.order_id",
+            "displayName": "Order Id"
+          },
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "sequence_no",
+            "expr": "source.sequence_no",
+            "displayName": "Sequence No"
+          },
+          {
+            "name": "product_id",
+            "expr": "source.product_id",
+            "displayName": "Product Id"
+          },
+          {
+            "name": "channel",
+            "expr": "source.channel",
+            "displayName": "Channel"
+          },
+          {
+            "name": "coupon_code",
+            "expr": "source.coupon_code",
+            "displayName": "Coupon Code"
+          },
+          {
+            "name": "coupon_flag",
+            "expr": "source.coupon_flag",
+            "displayName": "Coupon Flag"
+          },
+          {
+            "name": "unit_price_currency",
+            "expr": "source.unit_price_currency",
+            "displayName": "Unit Price Currency"
+          },
+          {
+            "name": "quantity",
+            "expr": "source.quantity",
+            "displayName": "Quantity"
+          },
+          {
+            "name": "unit_price",
+            "expr": "source.unit_price",
+            "displayName": "Unit Price"
+          },
+          {
+            "name": "gross_amount",
+            "expr": "source.gross_amount",
+            "displayName": "Gross Amount"
+          },
+          {
+            "name": "discount_percent",
+            "expr": "source.discount_percent",
+            "displayName": "Discount Percent"
+          },
+          {
+            "name": "discount_amount",
+            "expr": "source.discount_amount",
+            "displayName": "Discount Amount"
+          },
+          {
+            "name": "net_amount",
+            "expr": "source.net_amount",
+            "displayName": "Net Amount"
+          },
+          {
+            "name": "tax_amount",
+            "expr": "source.tax_amount",
+            "displayName": "Tax Amount"
+          },
+          {
+            "name": "final_amount",
+            "expr": "source.final_amount",
+            "displayName": "Final Amount"
+          },
+          {
+            "name": "fx_rate_date",
+            "expr": "source.fx_rate_date",
+            "displayName": "Fx Rate Date"
+          },
+          {
+            "name": "gross_amount_php",
+            "expr": "source.gross_amount_php",
+            "displayName": "Gross Amount Php"
+          },
+          {
+            "name": "discount_amount_php",
+            "expr": "source.discount_amount_php",
+            "displayName": "Discount Amount Php"
+          },
+          {
+            "name": "net_amount_php",
+            "expr": "source.net_amount_php",
+            "displayName": "Net Amount Php"
+          },
+          {
+            "name": "tax_amount_php",
+            "expr": "source.tax_amount_php",
+            "displayName": "Tax Amount Php"
+          },
+          {
+            "name": "final_amount_php",
+            "expr": "source.final_amount_php",
+            "displayName": "Final Amount Php"
+          },
+          {
+            "name": "file_name",
+            "expr": "source.file_name",
+            "displayName": "File Name"
+          },
+          {
+            "name": "ingest_timestamp",
+            "expr": "source.ingest_timestamp",
+            "displayName": "Ingest Timestamp"
+          },
+          {
+            "name": "processed_time",
+            "expr": "source.processed_time",
+            "displayName": "Processed Time"
+          },
+          {
+            "name": "year",
+            "expr": "source.year",
+            "displayName": "Year"
+          },
+          {
+            "name": "month_name",
+            "expr": "source.month_name",
+            "displayName": "Month Name"
+          },
+          {
+            "name": "day_name",
+            "expr": "source.day_name",
+            "displayName": "Day Name"
+          },
+          {
+            "name": "is_weekend",
+            "expr": "source.is_weekend",
+            "displayName": "Is Weekend"
+          },
+          {
+            "name": "quarter",
+            "expr": "source.quarter",
+            "displayName": "Quarter"
+          },
+          {
+            "name": "week_of_year",
+            "expr": "source.week_of_year",
+            "displayName": "Week Of Year"
+          },
+          {
+            "name": "sku",
+            "expr": "source.sku",
+            "displayName": "Sku"
+          },
+          {
+            "name": "category_code",
+            "expr": "source.category_code",
+            "displayName": "Category Code"
+          },
+          {
+            "name": "category_name",
+            "expr": "source.category_name",
+            "displayName": "Category Name"
+          },
+          {
+            "name": "brand_code",
+            "expr": "source.brand_code",
+            "displayName": "Brand Code"
+          },
+          {
+            "name": "brand_name",
+            "expr": "source.brand_name",
+            "displayName": "Brand Name"
+          },
+          {
+            "name": "color",
+            "expr": "source.color",
+            "displayName": "Color"
+          },
+          {
+            "name": "size",
+            "expr": "source.size",
+            "displayName": "Size"
+          },
+          {
+            "name": "rating",
+            "expr": "source.rating",
+            "displayName": "Rating"
+          },
+          {
+            "name": "country_name",
+            "expr": "source.country_name",
+            "displayName": "Country Name"
+          },
+          {
+            "name": "state",
+            "expr": "source.state",
+            "displayName": "State"
+          },
+          {
+            "name": "region",
+            "expr": "source.region",
+            "displayName": "Region"
+          },
+          {
+            "name": "hour_of_day",
+            "expr": "source.hour_of_day",
+            "displayName": "Hour Of Day"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          },
+          {
+            "name": "total_sales",
+            "expr": "SUM(source.final_amount)",
+            "displayName": "Total Sales"
+          },
+          {
+            "name": "total_sales_php",
+            "expr": "SUM(source.final_amount_php)",
+            "displayName": "Total Sales (PHP)"
+          },
+          {
+            "name": "gross_sales",
+            "expr": "SUM(source.gross_amount)",
+            "displayName": "Gross Sales"
+          },
+          {
+            "name": "net_sales",
+            "expr": "SUM(source.net_amount)",
+            "displayName": "Net Sales"
+          },
+          {
+            "name": "total_discount",
+            "expr": "SUM(source.discount_amount)",
+            "displayName": "Total Discount"
+          },
+          {
+            "name": "total_tax",
+            "expr": "SUM(source.tax_amount)",
+            "displayName": "Total Tax"
+          },
+          {
+            "name": "total_quantity",
+            "expr": "SUM(source.quantity)",
+            "displayName": "Total Quantity"
+          },
+          {
+            "name": "Average Order Value",
+            "expr": "SUM(source.final_amount_php) / COUNT(DISTINCT source.order_id)",
+            "displayName": "Average Order Value"
+          }
+        ]
+      }
+    },
+    {
+      "name": "11b7422f",
+      "displayName": "Top 10 Products By Revenue",
+      "queryLines": [
+        "SELECT\r\n",
+        "    sku,\r\n",
+        "    category_name,\r\n",
+        "    ROUND(SUM(gross_amount_php), 2) AS gross_revenue_php,\r\n",
+        "    SUM(quantity) AS total_units,\r\n",
+        "    ROUND(AVG(unit_price), 2) AS avg_unit_price\r\n",
+        "FROM ecommerce.gold.fact_transactions_denorm\r\n",
+        "GROUP BY sku, category_name\r\n",
+        "ORDER BY gross_revenue_php DESC\r\n",
+        "LIMIT 10"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "e1bcc098",
+      "displayName": "Sales",
+      "layout": [
+        {
+          "widget": {
+            "name": "3826e28a",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"text-align:center;display:block;\"><span style=\"font-size: 36px;line-height: 1.5;\">Sales Insights</span></span>"
+              ],
+              "verticalAlign": "VERTICAL_ALIGN_CENTER"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "e48d71c7",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "monthly(order_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `order_date`)"
+                    },
+                    {
+                      "name": "measure(total_sales_php)",
+                      "expression": "MEASURE(`total_sales_php`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Monthly Sales Trend",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(order_date)",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(total_sales_php)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "PHP",
+                    "abbreviation": "compact"
+                  },
+                  "displayName": "Total Sales (PHP)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "net-amount",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "measure(total_quantity)",
+                      "expression": "MEASURE(`total_quantity`)"
+                    },
+                    {
+                      "name": "category_name",
+                      "expression": "`category_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Units Sold by Category"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(total_quantity)",
+                  "displayName": "Quantity",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "category_name",
+                  "displayName": "Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "ca65cde6",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "sum(net_amount_php)",
+                      "expression": "SUM(`net_amount_php`)"
+                    },
+                    {
+                      "name": "hour_of_day",
+                      "expression": "`hour_of_day`"
+                    },
+                    {
+                      "name": "day_name",
+                      "expression": "`day_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "heatmap",
+              "encodings": {
+                "x": {
+                  "fieldName": "hour_of_day",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "day_name",
+                  "displayName": "Name of Day",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Sunday",
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                      ]
+                    }
+                  }
+                },
+                "color": {
+                  "fieldName": "sum(net_amount_php)",
+                  "displayName": "Total Net Amount (PHP)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": false
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "country1",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_country_name",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "country_name",
+                      "expression": "`country_name`"
+                    },
+                    {
+                      "name": "country_name_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Country"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "country_name",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_country_name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 31,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "region",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_region",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "region_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Region"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "region",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_region"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 31,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "brand",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_brand_name",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "brand_name",
+                      "expression": "`brand_name`"
+                    },
+                    {
+                      "name": "brand_name_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Brand"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "brand_name",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_brand_name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 32,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "category",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_category_name",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "category_name",
+                      "expression": "`category_name`"
+                    },
+                    {
+                      "name": "category_name_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Category"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "category_name",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_category_name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 32,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "state",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_state",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "state",
+                      "expression": "`state`"
+                    },
+                    {
+                      "name": "state_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "State"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "state",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_state"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 31,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "channel",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_channel",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "channel",
+                      "expression": "`channel`"
+                    },
+                    {
+                      "name": "channel_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Channel"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "channel",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_channel"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 32,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "order-date",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_order_date",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "order_date",
+                      "expression": "`order_date`"
+                    },
+                    {
+                      "name": "order_date_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Order Date"
+              },
+              "widgetType": "filter-date-range-picker",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "order_date",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_order_date"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 33,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "quarter",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_quarter",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "quarter",
+                      "expression": "`quarter`"
+                    },
+                    {
+                      "name": "quarter_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Quarter"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "quarter",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_quarter"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 33,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "gross-revenue-php-by-country",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "sum(gross_amount_php)",
+                      "expression": "SUM(`gross_amount_php`)"
+                    },
+                    {
+                      "name": "country_name",
+                      "expression": "`country_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Gross Revenue (PHP) by Country"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(gross_amount_php)",
+                  "displayName": "Gross Revenue (PHP)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "country_name",
+                  "displayName": "Country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 15,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "t1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "sum(gross_amount_php)",
+                      "expression": "SUM(`gross_amount_php`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Gross Revenue (PHP)",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(gross_amount_php)",
+                  "style": {
+                    "bold": true,
+                    "fontSize": 40
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "23f1b500",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "sum(net_amount_php)",
+                      "expression": "SUM(`net_amount_php`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Net Revenue (PHP)",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(net_amount_php)",
+                  "style": {
+                    "bold": true,
+                    "fontSize": 40
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "17c26361",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "countdistinct(order_id)",
+                      "expression": "COUNT(DISTINCT `order_id`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Orders",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "countdistinct(order_id)",
+                  "style": {
+                    "bold": true,
+                    "fontSize": 40
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "5a83ca20",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "sum(quantity)",
+                      "expression": "SUM(`quantity`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Units Sold",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(quantity)",
+                  "style": {
+                    "bold": true,
+                    "fontSize": 40
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "d01e7293",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "avg(discount_percent)",
+                      "expression": "AVG(`discount_percent`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Average Discount %",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(discount_percent)",
+                  "style": {
+                    "bold": true,
+                    "fontSize": 40
+                  },
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "35d8881e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "measure(Average Order Value)",
+                      "expression": "MEASURE(`Average Order Value`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "AVG Order Value (PHP)",
+                "headerAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Average Order Value)",
+                  "style": {
+                    "bold": true
+                  },
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 3
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 10,
+            "y": 2,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "average-customers-per-month",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "11b7422f",
+                  "fields": [
+                    {
+                      "name": "sku",
+                      "expression": "`sku`"
+                    },
+                    {
+                      "name": "category_name",
+                      "expression": "`category_name`"
+                    },
+                    {
+                      "name": "sum(gross_revenue_php)",
+                      "expression": "SUM(`gross_revenue_php`)"
+                    },
+                    {
+                      "name": "sum(total_units)",
+                      "expression": "SUM(`total_units`)"
+                    },
+                    {
+                      "name": "avg(avg_unit_price)",
+                      "expression": "AVG(`avg_unit_price`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "rowsPerPage": 10,
+              "displayRowNumbers": true,
+              "frame": {
+                "showTitle": true,
+                "title": "Top 10 Products by Revenue",
+                "showDescription": false
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "sku",
+                    "displayName": "Product SKU"
+                  },
+                  {
+                    "fieldName": "category_name",
+                    "displayName": "Category"
+                  },
+                  {
+                    "fieldName": "sum(gross_revenue_php)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 2
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "Gross Revenue (PHP)"
+                  },
+                  {
+                    "fieldName": "sum(total_units)",
+                    "displayName": "Quantity"
+                  },
+                  {
+                    "fieldName": "avg(avg_unit_price)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 2
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "AVG Unit Price"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 15,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "c26362",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "channel",
+                      "expression": "`channel`"
+                    },
+                    {
+                      "name": "measure(Average Order Value)",
+                      "expression": "MEASURE(`Average Order Value`)"
+                    },
+                    {
+                      "name": "sum(gross_amount_php)",
+                      "expression": "SUM(`gross_amount_php`)"
+                    },
+                    {
+                      "name": "sum(quantity)",
+                      "expression": "SUM(`quantity`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`channel` IN (`channel`) OR TRUE"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Channel Performance"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "channel",
+                    "displayName": "Channel"
+                  },
+                  {
+                    "fieldName": "measure(Average Order Value)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 2
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "AVG Order Value"
+                  },
+                  {
+                    "fieldName": "sum(gross_amount_php)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 2
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "Gross Revenue (PHP)"
+                  },
+                  {
+                    "fieldName": "sum(quantity)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 0
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "Total Units Sold"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 21,
+            "width": 6,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "fb28d695",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "coupon_flag",
+                      "expression": "`coupon_flag`"
+                    },
+                    {
+                      "name": "sum(gross_amount_php)",
+                      "expression": "SUM(`gross_amount_php`)"
+                    },
+                    {
+                      "name": "sum(quantity)",
+                      "expression": "SUM(`quantity`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`channel` IN (`channel`) OR TRUE"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Coupon Performance"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "coupon_flag",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "all"
+                      },
+                      "hideGroupSeparator": true
+                    },
+                    "displayName": "Coupon Flag"
+                  },
+                  {
+                    "fieldName": "sum(gross_amount_php)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 2
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "Gross Revenue (PHP)"
+                  },
+                  {
+                    "fieldName": "sum(quantity)",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 0
+                      },
+                      "hideGroupSeparator": false
+                    },
+                    "displayName": "Total Units Sold"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 21,
+            "width": 6,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "a7da7729",
+            "queries": [
+              {
+                "name": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_coupon_flag",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "coupon_flag",
+                      "expression": "`coupon_flag`"
+                    },
+                    {
+                      "name": "coupon_flag_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Coupon Flag"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "coupon_flag",
+                    "queryName": "dashboards/01f14532ad9d127d8d501277d217e9c3/datasets/01f14532eb461460b4604f67f1d49037_coupon_flag"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 33,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "daily-gross-revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f84c1ff2",
+                  "fields": [
+                    {
+                      "name": "daily(order_date)",
+                      "expression": "DATE_TRUNC(\"DAY\", `order_date`)"
+                    },
+                    {
+                      "name": "sum(gross_amount_php)",
+                      "expression": "SUM(`gross_amount_php`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Daily Gross Revenue (PHP)"
+              },
+              "widgetType": "area",
+              "encodings": {
+                "x": {
+                  "fieldName": "daily(order_date)",
+                  "displayName": "Daily",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(gross_amount_php)",
+                  "displayName": "Gross Revenue (PHP)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 12,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
